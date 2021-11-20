@@ -5,15 +5,18 @@ Pour commencer, faites un fork (copie) de ce repository sur votre propre compte 
 
 
 ## Pour rappel, ce que doit respecter votre projet :
-- Au moins 4 pages HTML5 **valides** ([validator.w3.org](https://validator.w3.org/))
-- D'un point de vue structurel, votre site doit contenir, à minima :
+- Au moins 5 pages HTML5 pour chaque langue (donc 10 pages minimum au total). Toutes les pages devront être **valides** ([validator.w3.org](https://validator.w3.org/)) 
+- Pour rapple, d'un point de vue structurel, votre site doit contenir, à minima :
   - une en-tête de page,
   - un pied de page,
   - un système de navigation,
+  - un glossaire,
+  - une frise,
+  - une galerie,
   - des articles avec des textes structurés et hiérarchisés
     - titres (au moins les 3 premiers niveaux),
     - paragraphes,
-    - citation(s)
+    - citation(s),
     - mise en valeur faible et forte,
     - liens hypertextes
   - des medias
@@ -21,12 +24,11 @@ Pour commencer, faites un fork (copie) de ce repository sur votre propre compte 
     - vidéo(s) intégrée(s) (pas de vidéo Youtube ou autre plateforme vidéo)
     - galerie d'images
   - un formulaire de contact
+  - une partie "à propos"
+  - la liste des liens vers les autres projets du groupe de TP
 - Tous les fichiers doivent être organisés dans des dossiers et nommés correctement ([en savoir plus](https://2associes.com/conventions-de-nomenclature-de-fichiers/))
 - Des images et vidéos optimisées pour un affichage mobile
  
 
 ## Pour la partie CSS
-Vos fichiers css doivent se trouver dans le répertoire nommé "css" et être répartis de la manière suivante :
-
-- "lib" : répertoire contenant les **librairies css** utilisées (normalize, fontawesome…) (c'est-à-dire tous les css que vous n'avez pas écrits)
-- "mescss" : **vos propres fichiers css** (layout.css, typo.css…) (c'est-à-dire tous les css que vous avez écrits)
+Vous n'utiliserez aucune librairie css, hormis un fichier de normalisation (normalize.css).
