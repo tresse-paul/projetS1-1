@@ -20,7 +20,7 @@
             <div class="header__start">
                 <a href="/">
                 <!-- Logo de Belvédère Historique -->
-                    <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
+                    <img class="header__logo-index" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
                 </a>
             </div>
 
@@ -89,7 +89,7 @@
         <section class="section">
 
             <!-- Card bouquin -->
-            <article class="section__card card">
+            <article class="section__card">
                 <img class="card__img" src="public/img/Couverture livre 1.jpg" alt="Couverture du livre Max">
                 <h4 class="card__title">Max</h4>
                 <p class="card__caption">Un roman coup de poing écrit par Sarah Cohen-Scall en 2012, une fiction s’inspirant  de faits réels. Max, spectateur des jeunesses hitlériennes...</p>
@@ -97,7 +97,7 @@
             </article>
 
             <!-- Card ciné -->
-            <article class="section__card--alternate card">
+            <article class="section__card--alternate">
                 <img class="card__img" src="public/img/Affiche La Vague 1.jpg" alt="Affiche du film La Vague">
                 <h4 class="card__title--alternate">La Vague</h4>
                 <p class="card__caption--alternate">La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que...</p>
@@ -105,7 +105,7 @@
             </article>
 
             <!-- Card point-commun -->
-            <article class="section__card card">
+            <article class="section__card">
                 <img class="card__img" src="public/img/Photo Hitler 1.jpg" alt="Photographie d'Adolph Hitler">
                 <h4 class="card__title">La manipulation de la jeunesse</h4>
                 <p class="card__caption">Max et La Vague parle tout les deux de la jeunesse dans les régimes totalitaires. Les jeunesses hitlériennes en sont un exemple. Ces trois éléments montreront...</p>
@@ -119,8 +119,10 @@
     <footer class="footer">
 
         <!-- Logo de Belvédère Historique -->
-        <img class="footer__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
-        <h5>Belvédère Historique</h5>
+        <div class="footer__title">
+            <img class="footer__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
+            <h5>Belvédère Historique</h5>
+        </div>
 
         <!-- Menu du footer -->
         <nav class="footer__menu">
@@ -133,7 +135,7 @@
 
         <!-- Réseaux sociaux -->
         <div class="footer__social">
-            <ul class="footer__list list-unstyled">
+            <ul class="footer__list-social list-unstyled">
                 <li><a href="https://facebook.com"> <img src="public/img/facebook-logo 1.png" alt="icône Facebook"> </a></li>
                 <li><a href="https://instagram.com"> <img src="public/img/instagram-logo (1) 1.png" alt="icône instagram"> </a></li>
                 <li><a href="https://twitter.com"> <img src="public/img/twitter-logo-button 1.png" alt="icône Twitter"> </a></li>
@@ -142,9 +144,9 @@
 
         <!-- Mentions légales -->
         <div>
-            <a class="list-unstyled" href="http://mmimontbeliard.com/">
+            <a class="footer__link-mmi list-unstyled" href="http://mmimontbeliard.com/">
                 <img class="footer__logommi" src="public/img/MMi logo blanc 1.png" alt="Logo du département MMI de Montbéliard">
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
+                <p class="footer__text-mmi">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
             </a>
             <p>©2018 belvédère-historique</p>
         </div>

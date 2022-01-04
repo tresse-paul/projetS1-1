@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--charcoal); 
+}
+
+.footer__list {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 10px;
+}
+
+.footer__list-social {
+    display: flex;
+    gap: 20px;
+    padding-left: 100px;
+}
+
+.footer__link-mmi {
+    color: var(--white);
+    display: flex;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.footer__logo {
+    transform: scale(0.41);
+}
+
+.footer__text-mmi {
+    font-size: var(--small-text);
+    padding-right: 20px;
+}

@@ -20,8 +20,6 @@
 
 .hero__chapo {
     font-size: var(--body);
-    padding-left: 10px;
-    padding-right: 10px;
     padding-top: 50px;
 }
 
@@ -29,14 +27,37 @@
     font-size: var(--body-bold);
     font-weight: bold;
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .chapo__title {
     font-size: var(--title--h3);
     letter-spacing: 5%;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 65px;
+    padding-top: 20px;
 }
 
+/*
+.chapo__title::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: var(--venetian--red);
+    display: block;
+    margin-right: 10px;
+}
+
+.chapo__title::after {
+    content: "";
+    width: 63px;
+    height: 4px;
+    background-color: var(--venetian--red);
+    display: block;
+    margin-left: 10px;
+}*/
+
 .chapo__arrow {
-    padding-left: 150px;
+    padding-left: 170px;
 }
