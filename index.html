@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Belvédère Historique</title>
+    <!-- Déclaration de la feuille de style -->
+
+    <!-- Chargement de la librairie Alpine JS -->
+
 </head>
 <body>
     
+    <!-- En-tête de la page -->
+    <header>
+        
+        <div class="header__start">
+            <a href="/">
+                <!-- Logo de Belvédère Historique -->
+                <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
+            </a>
+        </div>
+
+        <div class="header__end">
+
+            <!-- Bouton de menu hamburger -->
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav>
+                <ul>
+                    <li><a href="bouquin.html">Max, un témoignage glaçant</a></li>
+                    <li><a href="cine.html">Un jeu qui dérape</a></li>
+                    <li><a href="point_commun.html">La manipulation de la jeunesse</a></li>
+                    <li><a href="autres_projets.html">Autres projets</a></li>
+                    <li><a href="contact.html">Des questions ?</a></li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
+    <!-- Fin de l'en-tête -->
+
 </body>
 </html>
