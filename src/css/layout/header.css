@@ -1,0 +1,23 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.header__logo {
+    transform: scale(0.5);
+    position: absolute;
+    z-index: 1;
+    left:100px;
+    top: -15px;
+}
+
+.header__end {
+    right: 0px;
+}

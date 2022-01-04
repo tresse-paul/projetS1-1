@@ -1,0 +1,11 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: var(--caption);
+    color: var(--black);
+    text-align: center;
+    position: center;
+}

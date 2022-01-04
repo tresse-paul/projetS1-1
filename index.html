@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Belvédère Historique</title>
-    <!-- Déclaration de la feuille de style -->
+        <title>Belvédère Historique</title>
+        <!-- Déclaration de la feuille de style -->
+        <link rel="stylesheet" href="src/css/style.css">
+        <!-- Chargement de la librairie Alpine JS -->
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+        </head>
 
-    <!-- Chargement de la librairie Alpine JS -->
-
-</head>
-<body>
+    <body x-data="{ atTop : false }">
     
-    <!-- En-tête de la page -->
-    <header>
+        <!-- En-tête de la page -->
+        <header class="header">
 
-        <div class="header__start">
-            <a href="/">
+            <div class="header__start">
+                <a href="/">
                 <!-- Logo de Belvédère Historique -->
-                <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
-            </a>
-        </div>
+                    <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
+                </a>
+            </div>
 
-        <div class="header__end">
+            <div class="header__end">
 
-            <!-- Bouton de menu hamburger -->
-            <button class="header__menu-btn menu-btn"
-                    @click="menuIsOpen = !menuIsOpen"
-                    :class="menuIsOpen && 'menu-btn--open'">
-                <span class="menu-btn__bar"></span>
-            </button>
+                <!-- Bouton de menu hamburger -->
+                <button class="header__menu-btn menu-btn"
+                        @click="menuIsOpen = !menuIsOpen"
+                        :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
 
-            <!-- Menu principal -->
-            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-                <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="bouquin.html">Max, un témoignage glaçant</a></li>
-                    <li class="menu__item"><a class="menu__link" href="cine.html">Un jeu qui dérape</a></li>
-                    <li class="menu__item"><a class="menu__link" href="point_commun.html">La manipulation de la jeunesse</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
-                    <li class="menu__item"><a class="menu__link" href="contact.html">Des questions ?</a></li>
-                    <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
-                </ul>
-            </nav>
-            <!-- Fin du menu principal -->
-        </div>
-    </header>
-    <!-- Fin de l'en-tête -->
+                <!-- Menu principal -->
+                <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                    <ul class="menu__list list-unstyled">
+                        <div class="menu__button">
+                            <img class="menu__icon" src="public/img/open-book 1.png" alt="Icône d'un livre ouvert" >
+                            <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        </div>
+                        <div class="menu__button">
+                            <img class="menu__icon" src="public/img/clapperboard 1.png" alt="Icône d'un clapperboard">
+                            <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        </div>
+                        <div class="menu__button">
+                            <img class="menu__icon" src="public/img/meeting-point 1.png" alt="Icône de rassemblement">
+                            <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        </div>
+                        <div class="menu__button">
+                            <img class="menu__icon" src="public/img/startup 1.png" alt="Icône de fusée">
+                            <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        </div>
+                        <div class="menu__button">
+                            <img class="menu__icon" src="public/img/email 1.png" alt="Icône de lettre">
+                            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        </div>
+                    </ul>
+                </nav>
+             <!-- Fin du menu principal -->
+            </div>
+        </header>
+        <!-- Fin de l'en-tête -->
 
     <!-- Contenu principale de la page -->
     <main>
@@ -86,7 +101,7 @@
                 <img class="card__img" src="public/img/Affiche La Vague 1.jpg" alt="Affiche du film La Vague">
                 <h4 class="card__title--alternate">La Vague</h4>
                 <p class="card__caption--alternate">La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que...</p>
-                <a class="card__link--alternate list-unstyled" href="bouquin.html">Je découvre le film</a>
+                <a class="card__link--alternate list-unstyled" href="cine.html">Je découvre le film</a>
             </article>
 
             <!-- Card point-commun -->
@@ -94,7 +109,7 @@
                 <img class="card__img" src="public/img/Photo Hitler 1.jpg" alt="Photographie d'Adolph Hitler">
                 <h4 class="card__title">La manipulation de la jeunesse</h4>
                 <p class="card__caption">Max et La Vague parle tout les deux de la jeunesse dans les régimes totalitaires. Les jeunesses hitlériennes en sont un exemple. Ces trois éléments montreront...</p>
-                <a class="card__link list-unstyled" href="bouquin.html">Je découvre l'article</a>
+                <a class="card__link list-unstyled" href="point_commun.html">Je découvre l'article</a>
             </article>
 
         </section>

@@ -1,0 +1,101 @@
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--charcoal);
+    font-size: var(--title--h3);
+    transition: all 1s ease;
+    transform: translateX(100%);
+    z-index: 1;
+}
+
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu__list {
+    margin-top: 110px;
+    margin-left: 20px;
+}
+
+.menu__item {
+    margin-top: 12%;
+}
+
+.menu__link {
+    color: var(--black);
+    text-decoration: none;
+    align-items: flex-end;
+    font-size: var(--title--h3);
+    font-family: var(--font-serif);
+}
+
+.menu__icon {
+    transform: scale(0.5);
+}
+
+.menu__button {
+    display: flex;
+    align-items: flex-start;
+    min-height: 93px;
+    max-width: 100%;
+    background-color: var(--white);
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px; 
+    background: none;
+    border: none;
+}
+  
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: '';
+    background: var(--white);
+    height: 4px;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .8s ease;
+}
+  
+.menu-btn__bar::before {
+    top: -10px;
+}
+  
+.menu-btn__bar::after {
+    top: 10px;
+}
+  
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    background-color: var(--white);
+    transform: rotate(135deg);
+}
+  
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+  
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.header--atTop .menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+    background-color: var(--gray-black);
+}
