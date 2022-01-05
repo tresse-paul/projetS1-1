@@ -26,53 +26,53 @@
 
             <div class="header__end">
 
-                <!-- Bouton de menu hamburger -->
-                <button class="header__menu-btn menu-btn"
-                        @click="menuIsOpen = !menuIsOpen"
-                        :class="menuIsOpen && 'menu-btn--open'">
-                    <span class="menu-btn__bar"></span>
-                </button>
+            <!-- Bouton de menu hamburger -->
+            <button class="header__menu-btn menu-btn"
+                    @click="menuIsOpen = !menuIsOpen"
+                    :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
 
-                <!-- Menu principal -->
-                <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
-                    <p class="menu__title">Menu</p>
-                    <ul class="menu__list list-unstyled">
-                        <div class="menu__button">
-                            <a href="bouquin.html">
-                                <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
-                                <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
-                            </a>
-                        </div>
-                        <div class="menu__button">
-                            <href="cine.html">
-                                <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
-                                <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
-                            </a>
-                        </div>
-                        <div class="menu__button">
-                            <a href="point_commun.html">
-                                <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
-                                <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
-                            </a>
-                        </div>
-                        <div class="menu__button">
-                            <a href="autres_projets.html">
-                                <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
-                                <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
-                            </a>
-                        </div>
-                        <div class="menu__button">
-                            <a href="contact.html">
-                                <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
-                                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                            </a>
-                        </div>
-                    </ul>
-                </nav>
-             <!-- Fin du menu principal -->
-            </div>
-        </header>
-        <!-- Fin de l'en-tête -->
+            <!-- Menu principal -->
+            <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <p class="menu__title">Menu</p>
+                <ul class="menu__list list-unstyled">
+                    <div class="menu__button">
+                        <a href="bouquin.html">
+                            <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
+                            <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="cine.html">
+                            <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
+                            <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="point_commun.html">
+                            <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
+                            <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="autres_projets.html">
+                            <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
+                            <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="contact.html">
+                            <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
+                            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+         <!-- Fin du menu principal -->
+        </div>
+    </header>
+    <!-- Fin de l'en-tête -->
 
     <!-- Contenu principale de la page -->
     <main>
