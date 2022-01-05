@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Un jeu qui dérape</title>
-    <!-- Déclaration de la feuille de style -->
-
-    <!-- Chargement de la librairie Alpine JS -->
-
-</head>
+        <title>Belvédère Historique</title>
+        <!-- Déclaration de la feuille de style -->
+        <link rel="stylesheet" href="src/css/style.css">
+        <!-- Chargement de la librairie Alpine JS -->
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+        </head>
 <body>
     
     <!-- En-tête de la page -->
     <header>
         <!-- Arrière plan du header -->
-        <img src="public/img/header 1.jpg" alt="Alignement de livres de dos">
+        <img class="header__bg" src="public/img/header.jpg" alt="Alignement de livres de dos">
 
         <div class="header__start">
             <a href="/">
                 <!-- Logo de Belvédère Historique -->
                 <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
             </a>
+            <h1 class="header__title">Belvédère Historique</h1>
         </div>
-
-        <h1>Belvédère Historique</h1>
 
         <div class="header__end">
 
@@ -38,16 +37,41 @@
 
             <!-- Menu principal -->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <p class="menu__title">Menu</p>
                 <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="bouquin.html">Max, un témoignage glaçant</a></li>
-                    <li class="menu__item"><a class="menu__link" href="cine.html">Un jeu qui dérape</a></li>
-                    <li class="menu__item"><a class="menu__link" href="point_commun.html">La manipulation de la jeunesse</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
-                    <li class="menu__item"><a class="menu__link" href="contact.html">Des questions ?</a></li>
-                    <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
+                    <div class="menu__button">
+                        <a href="bouquin.html">
+                            <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
+                            <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="cine.html">
+                            <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
+                            <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="point_commun.html">
+                            <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
+                            <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="autres_projets.html">
+                            <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
+                            <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="contact.html">
+                            <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
+                            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        </a>
+                    </div>
                 </ul>
             </nav>
-            <!-- Fin du menu principal -->
+         <!-- Fin du menu principal -->
         </div>
     </header>
     <!-- Fin de l'en-tête -->
@@ -62,7 +86,7 @@
             <section class="article">
                 <p class="article__chapo">La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que nous montre Dennis Gansel dans La Vague.</p>
                 <figure>
-                    <img class="article__img" src="public/img/Affiche La Vague 2.jpg" alt="Affiche du film La Vague">
+                    <img class="article__img" src="public/img/Affiche_La Vague_2.jpg" alt="Affiche du film La Vague">
                     <figcaption class="article__img-caption">Affiche du film La Vague.</figcaption>
                 </figure>
                 <p class="article__text">Dans la Vague, le public visé s’identifie très vite aux personnages. Des étudiants allemands doivent participer à des ateliers durant une semaine. Ce sont leurs professeurs qui animent ces stages. <br> Nous suivons donc un professeur, Rainer Wenger et sa classe pendant une semaine. Le sujet imposé est l’autocratie. L’autocratie est définie par les pleins pouvoirs donnés à une unique personne. Le débat durant la première journée parle de la prévention faite pour éviter les  régimes totalitaires. Pour les élèves, il est aujourd’hui impossible que l’Allemagne connaisse à nouveau cela. <br> Le professeur aimerait leur prouver le contraire. Il va mettre en place un jeu. Ce jeu va déraper petit à petit. Tout d’abord chaque étape du film montre comment peut se construire un régime totalitaire. Il montre aussi comment sont traités les personnes résitantes ou n’appartenant pas au groupe. Il est très compliqué, une fois le processus lanc”, de stopper ce mouvement sans qu’il y ait des conséquences.
@@ -74,7 +98,7 @@
                 <p class="article__text">
                     Au début du jeu se fait pour déstabiliser le cours à l’étage. Le professeur s’y trouvant ayant choisi le sujet que voulait Wenger : l’anarchie. Petit à petit des règles se mettent en place. Appeler le proffesseur Monsieur Wenger, se mettre debout lorsque l’on nous donne la parole, porter l’uniforme choisi, proliférer le. <br>
                     <figure>
-                        <img src="public/img/Reunion 1.jpg" alt="Image extraite du film La Vague">
+                        <img src="public/img/Reunion.jpg" alt="Image extraite du film La Vague">
                         <figcaption>Réunion des adeptes La Vague.</figcaption>
                     </figure>
                     Les élèves se mettent dans leurs rôles et pour certains beaucoup trop. Ils vont jusqu’à taguer le symbole en ville, bloquer l’accès à certains lieux aux élèves nintégrant pas la Vague. Durant leur escapade en ville des élèves se retrouvèrent face à des junkies. Pour riposter, un des élèves, Tim sorti une arme. Il les menaça au nom de la Vague. Tim est un personnage qui ne différencie plus le jeu de la rélité. Avant la vague, il était rejeté par les autres. Pour lui, la Vague est réelle. Jusqu’à brûler tout autres habits.
@@ -87,7 +111,7 @@
                 <p class="article__text">
                     Sur l’ensemble de la classe seulement deux élèves se rebellent contre ce début de dictature. Karo et Mona. À plusieurs reprises elles vont tenter de les alerter sur la malveillance et la perversité de ce jeu. Mais personne n’en tient compte. Un soir alors que Wenger rentrait chez lui, il fut accueilli par Tim. Celui-ci décida qu’il fallait au dirigeant une sécurité contre l’ennemi.
                     <figure>
-                        <img src="public/img/Fille mayot rouge 1.jpg" alt="Image extraite du film La Vague">
+                        <img src="public/img/Fille_mayot_rouge.jpg" alt="Image extraite du film La Vague">
                         <figcaption>Une des élèves qui proteste contre ce jeu</figcaption>
                     </figure>
                     A ce moment là, Wenger prit conscience de l’ampleur qu’avait pris cet atelier. Il décide d’organiser une réunion. Il voulait montrer aux élèves jusqu’ou seraient-ils prêts à aller pour la Vague. Il leurs demanda de faire le procès des “rebelles”. Malheureusement le dénouement se passera autrementque ce qu’il imaginait... 
@@ -97,7 +121,7 @@
             <!-- Bande annonce du film -->
             <section>
                 <h3 class="article__title">Bande Annonce</h3>
-                <img src="public/img/Bande-annonce 1.jpg" alt="Bande annonce Youtube du film La Vague">
+                <img src="public/img/Bande_annonce.jpg" alt="Bande annonce Youtube du film La Vague">
             </section>
 
             <!-- Autres ouvrages -->

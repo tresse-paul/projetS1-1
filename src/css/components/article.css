@@ -1,21 +1,26 @@
+/* Le block qui compose la card "Max" de la page d'accueil */
 .section__card {
     background-color: var(--steel--teal);
     min-height: 830px;
 }
 
+/* Le block qui compose la card "L'article" de la page d'accueil */
 .section__card--article {
     background-color: var(--steel--teal);
     min-height: 700px;  
 }
 
+/* Le block qui compose la card "La Vague" de la page d'accueil */
 .section__card--alternate {
     min-height: 720px;
 }
 
+/* Image associé aux cards sur la page d'accueil */
 .card__img {
     transform: scale(0.83);
 }
 
+/* Titre associé aux cards de la page d'accueil */
 .card__title {
     font-size: var(--title--h4);
     font-weight: normal;
@@ -25,6 +30,7 @@
     margin-top: -20px;
 }
 
+/* Titre associé à la card "La Vague" */
 .card__title--alternate {
     font-size: var(--title--h4);
     font-weight: normal;
@@ -33,7 +39,7 @@
     margin: 0;
     margin-top: -20px;
 }
-
+/* Tweet des cards sur la page d'accueil */
 .card__caption {
     font-size: var(--body);
     color: var(--white);
@@ -41,6 +47,7 @@
     padding-right: 20px;
 }
 
+/* Tweet de la card "La Vague" sur la page d'accueil */
 .card__caption--alternate {
     font-size: var(--body);
     color: var(--black);
@@ -48,6 +55,7 @@
     padding-right: 20px;
 }
 
+/* bouton d'action des cards sur la page d'accueil */
 .card__link{
     font-size: var(--body);
     text-transform: uppercase;
@@ -61,6 +69,7 @@
     margin-right: 10px;
 }
 
+/* bouton d'action de  la card "La Vague" sur la page d'accueil */
 .card__link--alternate {
     font-size: var(--body);
     text-transform: uppercase;
@@ -74,6 +83,7 @@
     margin-right: 10px;
 }
 
+/* Titre principal des pages article */
 .section__title {
     padding-top: 80px;
     font-size: var(--title--h3);
@@ -81,10 +91,12 @@
     text-align: center;
 }
 
+/* Titre des différents paragraphes des articles */
 .article__title {
     display: flex;
 }
 
+/* Chapo d'introduction des pages d'article */
 .article__chapo {
     font-size: var(--chapo);
     font-style: italic;
@@ -92,16 +104,20 @@
     padding-bottom: 5px;
 }
 
+/* Les images illustrant le contenu textuel des articles */
 .article__img {
     display: block;
-    padding-left: 30px;
+    justify-content: center;
+    margin: 0;
 }
 
+/* Les images illustrant les ouvrages en fin d'article */
 .ouvrage__img {
     display: block;
     padding-left: 60px;
 }
 
+/* Les titres associés aux images d'illustration des ouvrages en fin d'article */
 .ouvrage__title {
     text-align: center;
     font-size: var(--noms-douvrages);
@@ -110,6 +126,7 @@
     font-style: italic;
 }
 
+/* la présentation associés aux images d'illustration des ouvrages en fin d'article */
 .ouvrage__text {
     min-width: 150px;
     margin: 0;
@@ -118,6 +135,7 @@
     padding-top: 0;
 }
 
+/* Block qui regroupe l'ensemble d'un article (image, titre, paragraphe...) */
 .article {
     padding-left: 10px;
     padding-right: 10px;

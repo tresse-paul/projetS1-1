@@ -16,7 +16,7 @@
     <!-- En-tête de la page -->
     <header>
         <!-- Arrière plan du header -->
-        <img class="header__bg" src="public/img/header 1.jpg" alt="Alignement de livres de dos">
+        <img class="header__bg" src="public/img/header.jpg" alt="Alignement de livres de dos">
 
         <div class="header__start">
             <a href="/">
@@ -37,26 +37,37 @@
 
             <!-- Menu principal -->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <p class="menu__title">Menu</p>
                 <ul class="menu__list list-unstyled">
                     <div class="menu__button">
-                        <img class="menu__icon" src="public/img/open-book 1.png" alt="Icône d'un livre ouvert" >
-                        <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        <a href="bouquin.html">
+                            <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
+                            <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        </a>
                     </div>
                     <div class="menu__button">
-                        <img class="menu__icon" src="public/img/clapperboard 1.png" alt="Icône d'un clapperboard">
-                        <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        <a href="cine.html">
+                            <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
+                            <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        </a>
                     </div>
                     <div class="menu__button">
-                        <img class="menu__icon" src="public/img/meeting-point 1.png" alt="Icône de rassemblement">
-                        <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        <a href="point_commun.html">
+                            <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
+                            <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        </a>
                     </div>
                     <div class="menu__button">
-                        <img class="menu__icon" src="public/img/startup 1.png" alt="Icône de fusée">
-                        <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        <a href="autres_projets.html">
+                            <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
+                            <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        </a>
                     </div>
                     <div class="menu__button">
-                        <img class="menu__icon" src="public/img/email 1.png" alt="Icône de lettre">
-                        <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        <a href="contact.html">
+                            <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
+                            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        </a>
                     </div>
                 </ul>
             </nav>
@@ -75,7 +86,7 @@
             <section class="article">
                 <p class="article__chapo">Un roman coup de poing écrit par Sarah Cohen-Scali en 2012, une fiction s’inspirant de faits réels. Max, spectateur des jeunesses hitlériennes.</p>
                 <figure>
-                    <img class="article__img" src="public/img/Couverture livre 2.jpg" alt="Couverture du livre Max">
+                    <img class="article__img" src="public/img/Couverture_livre_2.jpg" alt="Couverture du livre Max">
                     <figcaption class="article__img-caption">Couverture du livre MAX.</figcaption>
                 </figure>
                 <p class="article__text">A l’ouverture du livre l’auteure nous plonge dans la peau d’un nouveau né. Celui-ci va naître dans un contexte atypique. Né d’un père nazi et d’une mère aryenne, l’enfant est conditionné à être parfait suivant certains critères. <br> <br> Il sera élévé dans un couvent loin de toutes attaches personnelles. Il entrera dans une école hitlérienne. il y rencontrera un jeune garçon polonais qui changera son destin. Ce dernier lui ouvrira les yeux sur ce qui construisait sa vie: hitler n’était que malheur, peur et désespoir.</p>
@@ -114,13 +125,13 @@
             <section>
                 <h3 class="article__title">Autres ouvrages de l'auteur</h3>
                 <figure>
-                    <img class="ouvrage__img" src="public/img/Mauvais delires 1.jpg" alt="Couverture du livre Mauvais Délires">
+                    <img class="ouvrage__img" src="public/img/Mauvais_delires.jpg" alt="Couverture du livre Mauvais Délires">
                     <h4 class="ouvrage__title">Mauvais délires</h4>
                 </figure>
                 <p class="ouvrage__text">Ce nouveau recueil fantastique plonge le lecteur dans des univers où la frontière entre raison et folie disparaît.</p>
 
                 <figure>
-                    <img class="ouvrage__img" src="public/img/Orphelin 1.jpg" alt="Couverture du livre Orphelins 88">
+                    <img class="ouvrage__img" src="public/img/Orphelin.jpg" alt="Couverture du livre Orphelins 88">
                     <h4 class="ouvrage__title">Orphelins 88</h4>
                 </figure>
                 <p class="ouvrage__text">Un roman saisissant qui éclaire un pan méconnu de l’après-Seconde Guerre mondiale et les drames liés au programme eugéniste des nazi, le Lbensborn.</p>

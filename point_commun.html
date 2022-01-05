@@ -1,31 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{ menuIsOpen : false }" :class="menuIsOpen && 'noscroll'">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>La manipulation de la jeunesse</title>
-    <!-- Déclaration de la feuille de style -->
-
-    <!-- Chargement de la librairie Alpine JS -->
-
-</head>
+        <title>Belvédère Historique</title>
+        <!-- Déclaration de la feuille de style -->
+        <link rel="stylesheet" href="src/css/style.css">
+        <!-- Chargement de la librairie Alpine JS -->
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+        </head>
 <body>
     
     <!-- En-tête de la page -->
     <header>
         <!-- Arrière plan du header -->
-        <img src="public/img/header 1.jpg" alt="Alignement de livres de dos">
+        <img class="header__bg" src="public/img/header.jpg" alt="Alignement de livres de dos">
 
         <div class="header__start">
             <a href="/">
                 <!-- Logo de Belvédère Historique -->
                 <img class="header__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
             </a>
+            <h1 class="header__title">Belvédère Historique</h1>
         </div>
-
-        <h1>Belvédère Historique</h1>
 
         <div class="header__end">
 
@@ -38,16 +37,41 @@
 
             <!-- Menu principal -->
             <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
+                <p class="menu__title">Menu</p>
                 <ul class="menu__list list-unstyled">
-                    <li class="menu__item"><a class="menu__link" href="bouquin.html">Max, un témoignage glaçant</a></li>
-                    <li class="menu__item"><a class="menu__link" href="cine.html">Un jeu qui dérape</a></li>
-                    <li class="menu__item"><a class="menu__link" href="point_commun.html">La manipulation de la jeunesse</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
-                    <li class="menu__item"><a class="menu__link" href="contact.html">Des questions ?</a></li>
-                    <li class="menu__item"><a class="menu__link" href="a_propos.html">À propos</a></li>
+                    <div class="menu__button">
+                        <a href="bouquin.html">
+                            <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
+                            <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="cine.html">
+                            <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
+                            <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="point_commun.html">
+                            <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
+                            <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="autres_projets.html">
+                            <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
+                            <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
+                        </a>
+                    </div>
+                    <div class="menu__button">
+                        <a href="contact.html">
+                            <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
+                            <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
+                        </a>
+                    </div>
                 </ul>
             </nav>
-            <!-- Fin du menu principal -->
+         <!-- Fin du menu principal -->
         </div>
     </header>
     <!-- Fin de l'en-tête -->
@@ -62,7 +86,7 @@
             <section class="article">
                 <p class="article__chapo">Max et La Vague parle tout les deux de la jeunesse dans les régimes totalitaires. Les jeunesses hitlériennes en sont un exemple. Ces trois éléments montreront que la manipulation de la jeunesse joue un rôle prépondérant dans les régimes totalitaires.</p>
                 <figure>
-                    <img class="article__img" src="public/img/Photo Hitler 2.jpg" alt="Photographie d'Adolph Hitler">
+                    <img class="article__img" src="public/img/Photo_Hitler_2.jpg" alt="Photographie d'Adolph Hitler">
                     <figcaption class="article__img-caption">Hitler rencontrant les jeunesses hitlériennes.</figcaption>
                 </figure>
                 <p class="article__text">Durant la seconde guerre mondiale et même avant. Il existait les jeunesses hitlériennes. Au début c’était une organisation de jeunes soutenant le parti nazi. Pat la suite, elles sont devenue obligatoire pour tous jeunes entre 10 et 18 ans. Le but était de créer une armée endoctrinée. <br> Il exista à l’intérieur de cette organisation, le programme Lebensborn, qui consistait à faire naître des enfants correspondant à certains critères et de les élever sous idéologie. <br> Le film la Vague montre que la jeunesse est plus docile et plus facile à influencer. Le livre Max, lui nous montre l’horreur de ce programme, mais aussi qu’un enfant croit ce qu’on lui dit sans se poser de questions. Qu’il est simple de leur demander des choses dont ils ne comprendront pas la gravité. Les régimes totalitaires se servent de la jeunesse pour la main d’œuvre sans crainte de rébellion.
@@ -74,12 +98,12 @@
                 <p class="article__text">
                     Les premières jeunesses hitlériennes ont vu le jour en 1922. Elles étaient alors l’organisation des jeunes du parti Nazi. Celui-ci fût interdit en Allemagne. Ils réapparurent en 1926. Les jeunesses hitlériennes ont été créées dans le but de fournir une armée à l’Allemagne. Le parti nazi détourne ainsi les clauses du Traité de Versailles (interdiction d’avoir une armée ou un armement) suite à la 1ère guerre mondiale. Elles servent aussi à maîtriser l’éducation de la jeunesse. <br> Pour attirer le plus de jeunes possible, un programme de propagande a été mis en place. En 1933, plus de 3,5 millions de jeunes avait rejoint le mouvement. L’organisation se divisaient en deux parties. <br> Hitlerjugend, les jeunesses hitlériennes, pour les garçons de 14 à 18 ans. Ils étaient formé pour devenir soldats. <br> Bund Deutscher Madel, la ligue des jeunes filles allemandes, pour les filles de 14 à 18 ans. Elles apprenaient à devenir de bonne mère.
                     <figure>
-                        <img src="public/img/propagande 1.jpg" alt="Affiches de propagandes pour les jeunesses hitlériennes">
+                        <img src="public/img/propagande.jpg" alt="Affiches de propagandes pour les jeunesses hitlériennes">
                         <figcaption>Affiche de propagande pour les jeunesses hitlériennes.</figcaption>
                     </figure>
                     En 1936, les jeunesses hitlériennes furent obligatoires, pour toutes personnes âgées de 10 à 18 ans. Cette éducation mettait en avant le sport, les entraînements plutôt que la scolarité. Chaque enfant des jeunesses hitlériennes, devait porter un uniforme. Celui-ci était très proche de celui des soldats. Les garçons possédaient un poignard avec les inscriptions “sang et honneur” sur la lame.
                     <figure>
-                        <img src="public/img/Uniforme 1.jpg" alt="Uniforme porté par les jeunesses hitlériennes">
+                        <img src="public/img/Uniforme.jpg" alt="Uniforme porté par les jeunesses hitlériennes">
                         <figcaption>Uniforme porté par les jeunesses</figcaption>
                     </figure>
                 </p>
@@ -91,7 +115,7 @@
                 <p class="article__text">
                     Le programme Lebensborn ou Fontaine de vie fut mis en place dans l’idée d’accélérer la création d’une race aryenne pure. Il fut à l’initiative de Heinrich Himmler en 1935. Au départ seuls les familles de soldats SS devaient concevoir au moins 4 enfants pour accélérer le processus. Puis on demanda aux femmes considérées comme aryennes de procréer avec des soldats SS et d’offrir leur enfant à la nation anonymement. Ces enfants devaient constituer l’élite du futur. Le programme se chargeait de leur éducation, de leur endoctrinement puis de leur placement dans des familles allemandes.
                     <figure>
-                        <img src="public/img/Image nurserie 1.jpg" alt="Photographie d'une nurserie du Lebensborn">
+                        <img src="public/img/Image_nurserie.jpg" alt="Photographie d'une nurserie du Lebensborn">
                         <figcaption>Nurserie du Lebensborn</figcaption>
                     </figure>
                 </p>
