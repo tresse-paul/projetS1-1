@@ -1,18 +1,18 @@
 /* Le block qui compose la card "Max" de la page d'accueil */
 .section__card {
     background-color: var(--steel--teal);
-    min-height: 870px;
+    min-height: 840px;
 }
 
 /* Le block qui compose la card "L'article" de la page d'accueil */
 .section__card--article {
     background-color: var(--steel--teal);
-    min-height: 760px;  
+    min-height: 730px;  
 }
 
 /* Le block qui compose la card "La Vague" de la page d'accueil */
 .section__card--alternate {
-    min-height: 760px;
+    min-height: 730px;
 }
 
 /* Image associé aux cards sur la page d'accueil */

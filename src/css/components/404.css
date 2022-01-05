@@ -1,0 +1,43 @@
+.title__404 {
+    font-size: var(--title--h1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.title__404::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    padding: 0;
+    height: 4px;
+    width: 100%;
+    background: var(--venetian--red);
+    margin-top: 20px;
+}
+
+.title__404-span {
+    background-color: var(--white);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.label__404 {
+    margin-left: 30px;
+}
+
+.input__404 {
+    margin-left: 30px;
+}
+
+.button__404 {
+    font-size: var(--body);
+    color: var(--white);
+    border: 0;
+    background-color: var(--venetian--red);
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 110px;
+}
