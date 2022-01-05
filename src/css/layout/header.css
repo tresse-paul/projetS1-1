@@ -33,6 +33,7 @@
 }
 
 .header__title {
+    font-size: var(--title--article);
     font-weight: normal;
     position: absolute;
     z-index: 0;

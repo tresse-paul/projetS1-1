@@ -18,4 +18,5 @@
 /* Components */
 @import "components/menu.css";
 @import "components/hero.css";
-@import "components/article.css";
+@import "components/contenu.css";
+@import "components/formulaire.css";

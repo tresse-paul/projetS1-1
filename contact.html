@@ -79,32 +79,34 @@
     <main>
 
         <!-- Titre de la page -->
-        <h2 class="section__title">Des questions ?</h2>
+        <h2 class="section__title"><span class="span__title">Des questions ?</span></h2>
 
         <form action="#">
-            <p>
-                <label for="name">
-                    <input class="form__username" type="text" id="name" name="username" value="chewbacca">
-                </label>
+            <p class="formulaire__name">
+                <span class="span__title">
+                    <label class="form__design" for="name">
+                        <input class="form__username" type="text" id="name" name="username" value="chewbacca">
+                    </label>
+                </span>
             </p>
             <p>
-                <label for="email">
+                <label class="form__design" for="email">
                     <input class="form__email" type="email" id="email" name="email" value="chewbacca877@galaxy.com">
                 </label>
             </p>
             <p>
-                <label for="message">
+                <label class="form__design" for="message">
                     <textarea class="form__message" type="text" id="message" rows="5">Entrez votre message ici.</textarea><br>
                 </label>
             </p>
             <p>
-                <label for="newsletter">
+                <label class="checkbox" for="newsletter">
                     <input class="form__checkbox" type="checkbox" id="newsletter">
                     Je m'abonne à la newsletter.
                 </label>
             </p>
-            <p>
-                En renseignant votre adresse email et en vous abonnant à notre newsletter, vous acceptez de recevoir chaque semaine nos derniers articles de blog par courrier électronique et vous prenez connaissance de notre politique de confidentialité. <br>
+            <p class="form__mentions">
+                En renseignant votre adresse email et en vous abonnant à notre newsletter, vous acceptez de recevoir chaque semaine nos derniers articles de blog par courrier électronique et vous prenez connaissance de notre <a class="form__contact" href="#">politique de confidentialité.</a>  <br> <br>
                 Vous pouvez vous désinscrire à tout moment à l’aide des liens de désinscription ou en nous contactant à l’adresse :
                 <address>
                     <a class="form__mailto list-unstyled" href="mailto:contact@belvederehistorique.fr">contact@belvederehistorique.fr</a>

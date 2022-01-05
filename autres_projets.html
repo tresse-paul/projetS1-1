@@ -10,7 +10,9 @@
         <link rel="stylesheet" href="src/css/style.css">
         <!-- Chargement de la librairie Alpine JS -->
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-        </head>
+        <script src="https://animejs.com/lib/anime.min.js"></script>
+		<script src="src/js/fonctions.js"></script>
+    </head>
 <body>
     
     <!-- En-tête de la page -->
@@ -76,8 +78,29 @@
     </header>
     <!-- Fin de l'en-tête -->
 
+    <main>
+
+        <section class="section">
+            <!-- Titre de la page -->
+            <h2 class="section__title"><span class="span__title">Autres projets</span></h2>
+
+            <div>
+            <div class="droite">&nbsp;</div>
+            <div class="carrousel">
+                <div class="images">
+                    <img id="img1" class="image__imgalt" src="public/img/ines_canalda.jpg" alt="Aperçu d'un site web">
+                    <img id="img2" class="image__imgalt" src="public/img/florent_chatelet.jpg" alt="Aperçu d'un site web">
+                    <img id="img3" class="image" src="public/img/pacios.jpg" alt="Aperçu d'un site web">
+                </div>
+            </div>
+            </div>
+            
+        </section>
+
+    </main>
+
     <!-- Pied de page -->
-    <footer class="footer">
+    <footer class="footer__projets">
 
         <!-- Logo de Belvédère Historique -->
         <div class="footer__header">

@@ -2,8 +2,14 @@
     background-color: var(--charcoal);
 }
 
+.footer__projets {
+    background-color: var(--charcoal);
+    margin-top: 700px;
+}
+
 .footer__header {
     display: flex;
+    justify-content: center;
     align-items: center;
     max-height: 100px;
 }
