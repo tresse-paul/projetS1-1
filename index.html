@@ -37,23 +37,23 @@
                 <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
                     <ul class="menu__list list-unstyled">
                         <div class="menu__button">
-                            <img class="menu__icon" src="public/img/open-book 1.png" alt="Icône d'un livre ouvert" >
+                            <img class="menu__icon" src="public/img/open_book.png" alt="Icône d'un livre ouvert" >
                             <li class="menu__item"><a class="menu__link" href="bouquin.html">Bouquin</a></li>
                         </div>
                         <div class="menu__button">
-                            <img class="menu__icon" src="public/img/clapperboard 1.png" alt="Icône d'un clapperboard">
+                            <img class="menu__icon" src="public/img/clapperboard.png" alt="Icône d'un clapperboard">
                             <li class="menu__item"><a class="menu__link" href="cine.html">Ciné</a></li>
                         </div>
                         <div class="menu__button">
-                            <img class="menu__icon" src="public/img/meeting-point 1.png" alt="Icône de rassemblement">
+                            <img class="menu__icon" src="public/img/meeting_point.png" alt="Icône de rassemblement">
                             <li class="menu__item"><a class="menu__link" href="point_commun.html">Point-commun</a></li>
                         </div>
                         <div class="menu__button">
-                            <img class="menu__icon" src="public/img/startup 1.png" alt="Icône de fusée">
+                            <img class="menu__icon" src="public/img/startup.png" alt="Icône de fusée">
                             <li class="menu__item"><a class="menu__link" href="autres_projets.html">Autres projets</a></li>
                         </div>
                         <div class="menu__button">
-                            <img class="menu__icon" src="public/img/email 1.png" alt="Icône de lettre">
+                            <img class="menu__icon" src="public/img/email.png" alt="Icône de lettre">
                             <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
                         </div>
                     </ul>
@@ -72,13 +72,13 @@
             <div class="hero__header">
                 <h1 class="hero__title">Belvédère <br> Historique</h1>
                 <h2 class="hero__sub-title">Des livres, des films pour comprendre le passé...</h2>
-                <img class="hero__background" src="public/img/BG livres home page.jpg" alt="Une pile de livres de dos">
+                <img class="hero__background" src="public/img/BG_livres_home_page.jpg" alt="Une pile de livres de dos">
             </div>
 
             <!-- Chapo d'accueil -->
             <div class="hero__chapo">
                 <h3 class="chapo__title">Sujet de la semaine</h3>
-                <img class="chapo__arrow" src="public/img/down_arrow 1 (1).png" alt="Une flèche pointant vers le bas">
+                <img class="chapo__arrow" src="public/img/down_arrow.png" alt="Une flèche pointant vers le bas">
                 <p>L’importance de la jeunesse dans les régimes totalitaires.</p>
                 <p class="chapo__bold">Dans la plupart des régimes totalitaires, la jeunesse est endoctrinée et manipulée. Cette semaine nous étudierons le livre Max et le film La Vague qui nous permettront de comprendre la manipulation de la jeunesse dans les régimes totalitaires.</p>
             </div>
@@ -90,7 +90,7 @@
 
             <!-- Card bouquin -->
             <article class="section__card">
-                <img class="card__img" src="public/img/Couverture livre 1.jpg" alt="Couverture du livre Max">
+                <img class="card__img" src="public/img/Couverture_livre_1.jpg" alt="Couverture du livre Max">
                 <h4 class="card__title">Max</h4>
                 <p class="card__caption">Un roman coup de poing écrit par Sarah Cohen-Scall en 2012, une fiction s’inspirant  de faits réels. Max, spectateur des jeunesses hitlériennes...</p>
                 <a class="card__link list-unstyled" href="bouquin.html">Je découvre le livre</a>
@@ -98,7 +98,7 @@
 
             <!-- Card ciné -->
             <article class="section__card--alternate">
-                <img class="card__img" src="public/img/Affiche La Vague 1.jpg" alt="Affiche du film La Vague">
+                <img class="card__img" src="public/img/Affiche_La Vague_1.jpg" alt="Affiche du film La Vague">
                 <h4 class="card__title--alternate">La Vague</h4>
                 <p class="card__caption--alternate">La possibilité d’un nouveau régime totalitaire Allemand en 2009 semble impossible. C’est pourtant ce que...</p>
                 <a class="card__link--alternate list-unstyled" href="cine.html">Je découvre le film</a>
@@ -106,7 +106,7 @@
 
             <!-- Card point-commun -->
             <article class="section__card">
-                <img class="card__img" src="public/img/Photo Hitler 1.jpg" alt="Photographie d'Adolph Hitler">
+                <img class="card__img" src="public/img/Photo_Hitler.jpg" alt="Photographie d'Adolph Hitler">
                 <h4 class="card__title">La manipulation de la jeunesse</h4>
                 <p class="card__caption">Max et La Vague parle tout les deux de la jeunesse dans les régimes totalitaires. Les jeunesses hitlériennes en sont un exemple. Ces trois éléments montreront...</p>
                 <a class="card__link list-unstyled" href="point_commun.html">Je découvre l'article</a>
@@ -119,7 +119,7 @@
     <footer class="footer">
 
         <!-- Logo de Belvédère Historique -->
-        <div class="footer__title">
+        <div class="footer__header">
             <img class="footer__logo" src="public/img/Logo.png" alt="Logo de Belvédère Historique">
             <h5>Belvédère Historique</h5>
         </div>
@@ -127,29 +127,31 @@
         <!-- Menu du footer -->
         <nav class="footer__menu">
             <ul class="footer__list list-unstyled">
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="a_propos.html">À propos</a></li>
-                <li><a href="contact.html">Des questions ?</a></li>
+                <li><a class="footer__link" href="#">Mentions légales</a></li>
+                <li><a class="footer__link" href="a_propos.html">À propos</a></li>
+                <li><a class="footer__link" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <!-- Réseaux sociaux -->
         <div class="footer__social">
             <ul class="footer__list-social list-unstyled">
-                <li><a href="https://facebook.com"> <img src="public/img/facebook-logo 1.png" alt="icône Facebook"> </a></li>
-                <li><a href="https://instagram.com"> <img src="public/img/instagram-logo (1) 1.png" alt="icône instagram"> </a></li>
-                <li><a href="https://twitter.com"> <img src="public/img/twitter-logo-button 1.png" alt="icône Twitter"> </a></li>
+                <li><a href="https://facebook.com"> <img src="public/img/facebook_logo.png" alt="icône Facebook"> </a></li>
+                <li><a href="https://instagram.com"> <img src="public/img/instagram_logo.png" alt="icône instagram"> </a></li>
+                <li><a href="https://twitter.com"> <img src="public/img/twitter_logo.png" alt="icône Twitter"> </a></li>
             </ul>
         </div>
 
         <!-- Mentions légales -->
         <div>
             <a class="footer__link-mmi list-unstyled" href="http://mmimontbeliard.com/">
-                <img class="footer__logommi" src="public/img/MMi logo blanc 1.png" alt="Logo du département MMI de Montbéliard">
+                <img class="footer__logo-mmi" src="public/img/MMi_logo_blanc.png" alt="Logo du département MMI de Montbéliard">
                 <p class="footer__text-mmi">Projet réalisé dans le cadre d’un exercice pédagogique au département MMI de Montbéliard.</p>
             </a>
-            <p>©2018 belvédère-historique</p>
+            <p class="footer__copyright">©2018 belvédère-historique</p>
         </div>
+
+        
 
     </footer>
     <!-- Fin du footer -->
