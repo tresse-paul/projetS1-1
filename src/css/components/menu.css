@@ -19,9 +19,20 @@
     transform: translateX(0);
 }
 
+.menu__title {
+    color: var(--white);
+    padding-top: 30px;
+    padding-left: 20px;
+    font-family: var(--font-serif);
+    font-size: var(--title--h3);
+}
+
 .menu__list {
-    margin-top: 110px;
+    margin-top: 40px;
     margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .menu__item {
@@ -42,11 +53,11 @@
 
 .menu__button {
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
     min-height: 93px;
-    max-width: 100%;
+    min-width: 340px;
     background-color: var(--white);
-    margin-top: 30px;
+    margin-bottom: 30px;
     margin-right: 20px;
 }
 

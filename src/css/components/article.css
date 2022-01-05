@@ -1,5 +1,15 @@
 .section__card {
     background-color: var(--steel--teal);
+    min-height: 830px;
+}
+
+.section__card--article {
+    background-color: var(--steel--teal);
+    min-height: 700px;  
+}
+
+.section__card--alternate {
+    min-height: 720px;
 }
 
 .card__img {
@@ -15,9 +25,25 @@
     margin-top: -20px;
 }
 
+.card__title--alternate {
+    font-size: var(--title--h4);
+    font-weight: normal;
+    text-align: center;
+    color: var(--black);
+    margin: 0;
+    margin-top: -20px;
+}
+
 .card__caption {
     font-size: var(--body);
     color: var(--white);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card__caption--alternate {
+    font-size: var(--body);
+    color: var(--black);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -29,6 +55,19 @@
     display: block;
     text-align: center;
     background-color: var(--white);
+    min-height: 60px;
+    padding: 20px 10px 20px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card__link--alternate {
+    font-size: var(--body);
+    text-transform: uppercase;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    background-color: var(--venetian--red);
     min-height: 60px;
     padding: 20px 10px 20px 10px;
     margin-left: 10px;
