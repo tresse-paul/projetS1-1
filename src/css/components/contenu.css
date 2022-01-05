@@ -1,18 +1,18 @@
 /* Le block qui compose la card "Max" de la page d'accueil */
 .section__card {
     background-color: var(--steel--teal);
-    min-height: 830px;
+    min-height: 870px;
 }
 
 /* Le block qui compose la card "L'article" de la page d'accueil */
 .section__card--article {
     background-color: var(--steel--teal);
-    min-height: 700px;  
+    min-height: 760px;  
 }
 
 /* Le block qui compose la card "La Vague" de la page d'accueil */
 .section__card--alternate {
-    min-height: 720px;
+    min-height: 760px;
 }
 
 /* Image associé aux cards sur la page d'accueil */
@@ -168,4 +168,85 @@
 .article {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.questions__title {
+    font-size: var(--title--h6);
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.questions__title::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    padding: 0;
+    height: 4px;
+    width: 50px;
+    background: var(--venetian--red);
+    margin-top: 5px;
+
+}
+
+.questions__span {
+    background-color: var(--white);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.questions__text {
+    padding: 0;
+    margin-left: 35px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.questions__mailto {
+    color: var(--black);
+    text-decoration: underline;
+    padding: 0;
+    margin-left: 35px;
+    margin-top: -20px;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+/* /////////////////// CARROUSEL ///////////////////*/
+
+.carrousel-grid {
+    display: grid;                                    /* Disposition en grille CSS */
+    grid-template-columns: 1fr 2fr 1fr;                /* Tailles des colonnes : chaque ligne contient 3 cellules */
+    row-gap: 0px;                                    /* Espacement entre les lignes */
+    column-gap: 0px;                                /* Espacement entre les colonnes */
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.carrousel {
+    grid-column: 2;
+    grid-row: 2;
+    width: 375px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.images6 {
+    width: 375px;
+    height: 590px;
+    left:0;
+}
+
+.images6 img {
+    width: 375px;
+    height: 590px;
+}
+
+.image6 {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
 }

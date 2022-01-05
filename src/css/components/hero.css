@@ -1,9 +1,13 @@
+/* feuille css composant l'en-tête de la page d'accueil (fond, h1, h2, chapo) */
+
+/* image de fond du header */
 .hero__background {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: -1;
 }
 
+/* Titre h1 du header de la page d'accueil*/
 .hero__title {
     font-size: var(--title--h1);
     color: var(--white);
@@ -12,52 +16,48 @@
     padding-top: 60px;
 }
 
+/* sous-titre h2 du header de la page d'accueil */
 .hero__sub-title {
     color: var(--white);
     text-align: center;
     padding-top: 220px;
 }
 
+/* paragraphe du chapo */
 .hero__chapo {
     font-size: var(--body);
     padding-top: 50px;
 }
 
+/* paragraphe en gras du chapo */
 .chapo__bold {
     font-size: var(--body-bold);
     font-weight: bold;
     padding-right: 10px;
     padding-left: 10px;
 }
-
+ /* titre du chapo de la page d'accueil */
 .chapo__title {
     font-size: var(--title--h3);
     letter-spacing: 5%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 65px;
     padding-top: 0px;
 }
 
-/*
+/* élément graphique qui entoure le titre du chapo */
 .chapo__title::before {
     content: "";
-    width: 50px;
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
     height: 4px;
-    background-color: var(--venetian--red);
-    display: block;
-    margin-right: 10px;
+    width: 100%;
+    background: var(--venetian--red);
 }
 
-.chapo__title::after {
-    content: "";
-    width: 63px;
-    height: 4px;
-    background-color: var(--venetian--red);
-    display: block;
-    margin-left: 10px;
-}*/
-
+/* Flèche pointant vers le bas en dessous du chapo de la page d'accueil */
 .chapo__arrow {
     padding-left: 170px;
 }
